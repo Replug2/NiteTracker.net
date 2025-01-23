@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Socials</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        background-color: #24292e;
+        color: white;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h1 {
+        margin: 20px 0;
+      }
+
+      /* Center the navigation bar */
+      table {
+        width: 100%;
+        margin-bottom: 15px;
+        text-align: center;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      th,
+      td {
+        border: 2px solid black;
+        padding: 0;
+        text-align: center;
+      }
+
+      /* Navigation links styling */
+      a {
+        color: gold;
+        text-decoration: none;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        display: block;
+        padding: 12px 16px;
+        transition: background-color 0.3s ease;
+      }
+
+      a:hover {
+        background-color: #575757;
+      }
+
+      /* Dropdown menu styles */
+      .nav-dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .nav-dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #24292e;
+        min-width: 160px;
+        z-index: 1;
+        border-radius: 5px;
+      }
+
+      .nav-dropdown-content a {
+        color: gold;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .nav-dropdown-content a:hover {
+        background-color: #575757;
+      }
+
+      .nav-dropdown:hover .nav-dropdown-content {
+        display: block;
+      }
+
+      .nav-dropdown .dropbtn {
+        background-color: transparent;
+        color: gold;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+
+      /* Adjust spacing between navigation items */
+      th {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      /* Social Media Hexagonal Layout */
+      .hexagon-container {
+        display: grid;
+        grid-template-columns: repeat(5, 150px);
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .hexagon {
+        position: relative;
+        width: 150px;
+        height: 130px;
+        clip-path: polygon(
+          50% 0%,
+          100% 25%,
+          100% 75%,
+          50% 100%,
+          0% 75%,
+          0% 25%
+        );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        color: white;
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+
+      .hexagon:hover {
+        transform: scale(1.1);
+        box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
+      }
+
+      .instagram {
+        background-color: #e4405f;
+      }
+      .youtube {
+        background-color: #ff0000;
+      }
+      .twitter {
+        background-color: #1da1f2;
+      }
+      .tiktok {
+        background-color: #000000;
+      }
+      .twitch {
+        background-color: #9146ff;
+      }
+      .vk {
+        background-color: #4c75a3;
+      }
+      .threads {
+        background-color: #000000;
+      }
+      .bluesky {
+        background-color: #00b0ff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Socials</h1>
+
+    <!-- Centering the navigation and making sure links are next to each other -->
+    <table>
+      <tr>
+        <th><a href="index.html">Home</a></th>
+        <th><a href="/Socials/socials.html">Socials</a></th>
+        <th><a href="/Fortnite Map/Fortnite Map.html">Map</a></th>
+        <th><a href="/News/Fortnite News.html">News</a></th>
+        <th><a href="/Fortnite Shop/Fortnite Shop.html">Item Shop</a></th>
+        <th>
+          <a href="/Fortnite Cosmetics/Fortnite Cosmetics.html">Cosmetics</a>
+        </th>
+        <!-- Dropdown for Progress Tracker -->
+        <th class="nav-dropdown">
+          <button class="dropbtn">Progress Tracker</button>
+          <div class="nav-dropdown-content">
+            <a href="/Fortnite Progress Tracker/Fortnite Progress Tracker.html"
+              >Fortnite Progress Tracker</a
+            >
+            <a href="/Fortnite OG Tracker/Fortnite OG Tracker.html"
+              >Fortnite OG Progress Tracker</a
+            >
+            <a
+              href="/Fortnite Festival Progress Tracker/Fortnite Festival Progress Tracker.html"
+              >Fortnite Festival Progress Tracker</a
+            >
+            <a href="/Lego Fortnite Progress Tracker/LegoFortniteTracker.html"
+              >Fortnite Lego Progress Tracker</a
+            >
+          </div>
+        </th>
+      </tr>
+    </table>
+
+    <!-- Social Media Hexagonal Layout -->
+    <div class="hexagon-container">
+      <div class="hexagon instagram">
+        <img src="instagram.png" alt="Instagram" />
+      </div>
+      <div class="hexagon youtube">
+        <img src="Youtube.png" alt="YouTube" />
+      </div>
+      <div class="hexagon twitter">
+        <img src="twitter.png" alt="Twitter/X" />
+      </div>
+      <div class="hexagon tiktok">
+        <img src="tiktok.png" alt="TikTok" />
+      </div>
+      <div class="hexagon twitch">
+        <img src="twitch.png" alt="Twitch" />
+      </div>
+      <div class="hexagon vk">
+        <img src="vk.png" alt="VK" />
+      </div>
+      <div class="hexagon threads">
+        <img src="threads.png" alt="Threads" />
+      </div>
+      <div class="hexagon bluesky">
+        <img src="bluesky.png" alt="BlueSky" />
+      </div>
+    </div>
+  </body>
+</html>
